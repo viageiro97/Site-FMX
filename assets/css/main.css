@@ -1,0 +1,265 @@
+/*CORES ==============================*/
+/*FONTES ============================*/
+/*BACKGROUNDS =======================*/
+/*SHADOWS ========================*/
+/*Tipography ================ */
+/*Fontes*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "Poppins", sans-serif;
+}
+
+.big-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.big-title span {
+  color: #e7c900;
+}
+
+.small-title1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  color: #e7c900;
+  padding-left: 53px;
+  position: relative;
+}
+
+.small-title1::before {
+  content: "";
+  width: 45px;
+  height: 10%;
+  border-radius: 5px;
+  background: #e7c900;
+  position: absolute;
+  top: 45%;
+  left: 0px;
+}
+
+.small-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  color: #e7c900;
+  padding-left: 53px;
+  position: relative;
+}
+
+.small-title::before {
+  content: "";
+  width: 45px;
+  height: 10%;
+  border-radius: 5px;
+  background: #e7c900;
+  position: absolute;
+  top: 45%;
+  left: 0px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+/*==================== Buttons ==============*/
+.btn {
+  margin-right: 15px;
+  background-color: #e7c900;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: none;
+  color: #ffff;
+  border: 2px solid #e7c900;
+}
+
+.secondary-btn {
+  color: #ffff;
+  background: none;
+  border: 2px solid #e7c900;
+}
+
+.secondary-btn:hover {
+  background: #e7c900;
+  color: #1f232b;
+}
+
+/*STYLES FOR THE HERO SECTION */
+.hero {
+  /*General Hero Styles*/
+  color: #ffff;
+  background: url(/img/Background2.png);
+  background-size: cover;
+  min-height: 650px;
+  /*Header Syles*/
+  /*Hero Content Syles*/
+}
+
+.hero header {
+  padding: 15px 0;
+}
+
+.hero header span {
+  color: #e7c900;
+}
+
+.hero header a {
+  color: #ffff;
+}
+
+.hero header .navbar-nav {
+  margin-left: auto;
+}
+
+.hero .hero-content {
+  padding: 100px 0;
+}
+
+.hero .hero-content h1, .hero .hero-content p {
+  margin-bottom: 25px;
+}
+
+/*STYLES FOR THE ABOUT SECTION*/
+.about {
+  background: #f2f2f2;
+  padding: 10px 0;
+}
+
+.about .container {
+  position: relative;
+}
+
+.about .text {
+  padding: 90px 0;
+  margin-bottom: 30px;
+}
+
+.about .cards {
+  display: none;
+  position: absolute;
+  bottom: -26%;
+}
+
+.about .imagem {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: relative;
+  border-radius: 8px;
+  height: 200px;
+  background: blue;
+}
+
+.about .imagem img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .imagem div {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  width: 90%;
+  height: 60px;
+  position: absolute;
+  bottom: -10px;
+  left: 5%;
+}
+
+/*STYLES FOR THE CAST SECTION*/
+.cast {
+  padding-top: 170px;
+}
+
+.cast .elenco h3 {
+  text-align: center;
+  background: #1f232b;
+  color: #e7c900;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 3px 0;
+}
+
+.cast .elenco .row {
+  margin-bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cast .membro {
+  text-align: center;
+}
+
+.cast .membro p {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.cast .membro img {
+  margin-bottom: 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }*/
+@media (max-width: 768px) {
+  .big-title {
+    font-size: 2.2rem;
+  }
+  .hero-content {
+    text-align: center;
+  }
+  .small-title1 {
+    padding-left: 0;
+  }
+  .small-title1::before {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

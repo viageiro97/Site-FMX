@@ -1,0 +1,73 @@
+/*Tipography ================ */
+
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: $text-font;
+}
+.big-title{
+    font-size: 2.7rem;
+    font-weight: 700;
+    font-family: $title-font;
+    span{
+        color: $primary-color;
+    }
+}
+
+.small-title1{
+    font-family: $text-font;
+    font-weight: 400;
+    letter-spacing:2px;
+    font-size: 1.2rem;
+    color: $primary-color;
+    padding-left: 53px;;
+    position: relative;
+    &::before{
+        content: "";
+        width: 45px;
+        height: 10%;
+        border-radius: 5px;
+        background: $primary-color;
+        position: absolute;
+        top: 45%;
+        left: 0px;
+
+    }
+}
+
+.small-title{
+    font-family: $text-font;
+    font-weight: 400;
+    letter-spacing:2px;
+    font-size: 1.2rem;
+    color: $primary-color;
+    padding-left: 53px;;
+    position: relative;
+    &::before{
+        content: "";
+        width: 45px;
+        height: 10%;
+        border-radius: 5px;
+        background: $primary-color;
+        position: absolute;
+        top: 45%;
+        left: 0px;
+
+    }
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+h4{
+    font-size: 1.125rem;
+}

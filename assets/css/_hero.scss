@@ -1,0 +1,40 @@
+/*STYLES FOR THE HERO SECTION */
+.hero{
+    /*General Hero Styles*/
+        color: $white;
+        background: url(/img/Background2.png);
+        background-size: cover;
+        min-height: 650px;
+    
+    /*Header Syles*/
+    header{
+        padding: 15px 0;
+        span{
+            color: $primary-color;
+        }
+        a{
+            color: $white;
+        }
+        //background: #1f232bb0;
+        .navbar-nav{
+            margin-left: auto;
+        }
+    }
+
+    /*Hero Content Syles*/
+    .hero-content{
+        padding: 100px 0;
+        .container{
+        }
+
+        h1,p {
+            margin-bottom: 25px;
+        }
+
+    }
+
+
+}
+
+
+//Responsividade

@@ -1,0 +1,47 @@
+/*STYLES FOR THE ABOUT SECTION*/
+.about{
+    background: $background-dark;
+    padding: 10px 0;
+
+    .container{
+        position: relative;
+    }
+    .text{
+        padding: 90px 0;
+        margin-bottom: 30px;
+    }
+    //OPTIONAL
+    .cards{
+        display: none;
+        position: absolute;
+        bottom: -26%;
+    }
+
+    .imagem{
+        box-shadow: $box-shadow1;
+        position: relative;
+        border-radius: 8px;
+        height: 200px;
+        background: blue;
+        img{
+            border-radius: 8px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        div{
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background:$white;
+            box-shadow: $box-shadow2;
+            text-align: center;
+            width: 90%;
+            height: 60px;
+            position: absolute;
+            bottom: -10px;
+            left: 5%;
+        }
+    }
+}

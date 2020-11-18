@@ -1,0 +1,21 @@
+/*==================== Buttons ==============*/
+.btn{
+    margin-right: 15px;
+    background-color: $primary-color;
+    border-radius: 8px;
+    &:hover{
+        background: none;
+        color: $white;
+        border: 2px solid $primary-color;
+    }
+}
+
+.secondary-btn{
+    color: $white;
+    background: none;
+    border: 2px solid $primary-color;
+    &:hover{
+        background: $primary-color;
+        color: $title-color;
+    }
+}
