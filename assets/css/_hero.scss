@@ -8,6 +8,11 @@
     
     /*Header Syles*/
     header{
+        .container{
+            .btn{
+                margin-right: 0;
+            }
+        }
         padding: 15px 0;
         span{
             color: $primary-color;
@@ -18,6 +23,7 @@
         //background: #1f232bb0;
         .navbar-nav{
             margin-left: auto;
+            transition: all 800ms;
         }
     }
 

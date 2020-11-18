@@ -116,6 +116,10 @@ h4 {
   padding: 15px 0;
 }
 
+.hero header .container .btn {
+  margin-right: 0;
+}
+
 .hero header span {
   color: #e7c900;
 }
@@ -126,6 +130,8 @@ h4 {
 
 .hero header .navbar-nav {
   margin-left: auto;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
 }
 
 .hero .hero-content {
@@ -260,6 +266,38 @@ h4 {
   }
   .small-title1::before {
     display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .hide-nav {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .navbar-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30vw;
+    background: #1f232b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60vw;
+    height: 100vh;
+    z-index: 1000;
+  }
+  .navbar-nav .btn {
+    width: 120px;
+  }
+  .navbar-nav li {
+    padding: 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

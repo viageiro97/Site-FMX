@@ -32,3 +32,34 @@
     }
 
  }
+
+ //TO SCREEN LESS THAN 992px
+@media (max-width: 992px) {
+    //MENU
+    .hide-nav{
+        transform: translateX(-100%);
+    }
+    .navbar-nav{
+        .btn{
+            width: 120px;
+        }
+        justify-content: center;
+        width: 30vw;
+        
+        background: $title-color;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60vw;
+        height: 100vh;
+
+        z-index: 1000;
+
+        li{
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
