@@ -6,8 +6,19 @@
         background-size: cover;
         min-height: 650px;
     
+    /*HEADER Sytles on scroll*/
+    .navScrolled{
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        background:  #040d20e1;
+        padding: 8px 0;
+        box-shadow: $box-shadow1;
+        z-index: 3000;
+    }
     /*Header Syles*/
     header{
+        transition: all 500ms;
         .container{
             .btn{
                 margin-right: 0;

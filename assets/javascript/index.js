@@ -1,11 +1,17 @@
 const menuToggle = document.querySelector('.navbar-toggler');
 const menu = document.querySelector('.navbar-nav');
 const overlayMenu = document.querySelector('.overlay');
+const header = document.getElementById('header');
 
-console.log(overlayMenu);
-
+window.addEventListener('scroll',function(){
+    console.log(pageYOffset);
+    if(pageYOffset>header.clientHeight){
+        header.classList.add('navScrolled');
+    }else{
+        header.classList.remove('navScrolled');
+    }
+})
 menuToggle.addEventListener('click',mudarMenu);
-
 overlayMenu.addEventListener('click',mudarMenu);
 
 
