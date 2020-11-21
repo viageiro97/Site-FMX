@@ -25,6 +25,23 @@
             margin-left: auto;
             transition: all 800ms;
         }
+        .navbar-toggler{
+            i{
+                color: white !important;
+            }
+        }
+
+        .show{
+            width: 100vw;
+            height: 100vh;
+        }
+        .overlay{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 500;
+            background: rgba(0, 0, 0, 0.247);
+        }
     }
 
     /*Hero Content Syles*/

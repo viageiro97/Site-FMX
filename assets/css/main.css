@@ -134,6 +134,23 @@ h4 {
   transition: all 800ms;
 }
 
+.hero header .navbar-toggler i {
+  color: white !important;
+}
+
+.hero header .show {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero header .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  background: rgba(0, 0, 0, 0.247);
+}
+
 .hero .hero-content {
   padding: 100px 0;
 }
@@ -202,6 +219,10 @@ h4 {
 /*STYLES FOR THE CAST SECTION*/
 .cast {
   padding-top: 170px;
+}
+
+.cast .elenco {
+  margin-top: 55px;
 }
 
 .cast .elenco h3 {
