@@ -5,7 +5,6 @@
         background: url(/img/Background2.png);
         background-size: cover;
         min-height: 650px;
-    
     /*HEADER Sytles on scroll*/
     .navScrolled{
         position: fixed;
@@ -34,6 +33,38 @@
 
         .nav-link{
             font-size: .9rem;
+        }
+        .actual{
+            color: wheat;
+        }
+        .nav-hovered{
+            transition: all 300ms;
+            position: relative;
+            &::before{
+                transition: all 500ms;
+                content: "";
+                position: absolute;
+                left: 4%;
+                bottom: 2px;
+                border-radius: 8px;
+                width: 0;
+                height: 0px;
+                background: $primary-color;
+            }
+        }
+
+        .nav-hovered:hover{
+            color: $primary-color;
+            &::before{
+                width: 92%;
+                height: 2px;
+            }
+        }
+        .nav-item{
+            //outline: 1px solid tomato;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
         }
         //background: #1f232bb0;
         .navbar-nav{

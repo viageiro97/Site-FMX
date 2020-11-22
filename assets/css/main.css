@@ -77,6 +77,16 @@ h4 {
   font-size: 1.125rem;
 }
 
+.content-title {
+  font-size: 1.625rem;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
 /*==================== Buttons ==============*/
 .btn {
   margin-right: 15px;
@@ -144,6 +154,48 @@ h4 {
 
 .hero header .nav-link {
   font-size: .9rem;
+}
+
+.hero header .actual {
+  color: wheat;
+}
+
+.hero header .nav-hovered {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  position: relative;
+}
+
+.hero header .nav-hovered::before {
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  content: "";
+  position: absolute;
+  left: 4%;
+  bottom: 2px;
+  border-radius: 8px;
+  width: 0;
+  height: 0px;
+  background: #e7c900;
+}
+
+.hero header .nav-hovered:hover {
+  color: #e7c900;
+}
+
+.hero header .nav-hovered:hover::before {
+  width: 92%;
+  height: 2px;
+}
+
+.hero header .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
 }
 
 .hero header .navbar-nav {
@@ -338,5 +390,53 @@ h4 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.scroll {
+  height: 2000px;
+}
+
+.pageHero {
+  background: url(/img/pageHeroBg.png) no-repeat;
+  background-size: cover;
+  min-height: 200px;
+}
+
+.pageHero .hero-content {
+  padding: 65px 0;
+}
+
+.pageHero .hero-content h1 {
+  text-align: center;
+  position: relative;
+}
+
+.pageHero .hero-content h1::before {
+  content: "";
+  width: 40%;
+  border-radius: 8px;
+  height: 4px;
+  left: 30%;
+  bottom: -10px;
+  background: #e7c900;
+  position: absolute;
+}
+
+.textContent {
+  line-height: 1.6;
+  padding: 60px 0;
+}
+
+.textContent .title-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.textContent ol {
+  list-style: none;
+}
+
+.textContent li {
+  padding: 2px 0;
 }
 /*# sourceMappingURL=main.css.map */

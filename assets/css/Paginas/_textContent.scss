@@ -1,0 +1,17 @@
+.textContent{
+    line-height: 1.6;
+    padding: 60px 0;
+    .title-wrapper{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    ol{
+        list-style: none;
+    }
+    li{
+        padding: 2px 0;
+    }
+    .text-wrapper{
+        //text-align: justify;
+    }
+}

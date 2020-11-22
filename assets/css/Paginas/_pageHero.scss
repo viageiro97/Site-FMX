@@ -1,0 +1,29 @@
+.scroll{
+    height: 2000px;
+}
+
+.pageHero{
+    background: url(/img/pageHeroBg.png) no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    //box-shadow: $box-shadow1;
+
+    .hero-content{
+        padding: 65px 0;
+        h1{
+            text-align: center;
+            position: relative;
+
+            &::before{
+                content: "";
+                width: 40%;
+                border-radius: 8px;
+                height: 4px;
+                left: 30%;
+                bottom: -10px;
+                background:$primary-color;
+                position: absolute;
+            }
+        }
+    }
+}
