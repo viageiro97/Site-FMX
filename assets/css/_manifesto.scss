@@ -1,14 +1,9 @@
 body{
 }
 
-.bloco-texto{
-}
 
 .tab-link{
 
-}
-.hide{
-    display: none;
 }
 
 .actual-btn{
@@ -16,6 +11,18 @@ body{
     color: blue;
 }
 .manifesto{
+    .bloco-texto{
+        height: 0;overflow: hidden;
+        transition: all 600ms ease-in;
+        opacity: 0;
+        //transform: scale(0);
+    }
+    .showtext{
+        height: auto;
+        //transform: scale(1);
+        opacity: 1;
+    }
+    
     background: $background-dark;
     padding: 40px 0;
     .tab-text{

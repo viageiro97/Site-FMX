@@ -41,6 +41,14 @@
 }
 //TO SCREEN LESS THAN 768px
 @media (max-width: 768px) {
+    //about
+    .about{
+        .fotografia{
+            &::before{
+                display: none;
+            }
+        }
+    }
     //Manifesto
     .manifesto{
         .botoes{

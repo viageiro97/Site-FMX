@@ -1,0 +1,35 @@
+footer{
+    color: white;
+    padding-top: 45px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $title-color;
+    p{
+        font-weight: 300;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .end{
+        margin-top: 30px;
+    }
+}
+
+.socialicons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+        color: $primary-color;
+    }
+    i{
+        font-size: 1.3rem;
+    }
+    a+a{
+        margin-left: 20px;
+    }
+}

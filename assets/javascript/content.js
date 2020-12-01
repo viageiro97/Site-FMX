@@ -1,4 +1,5 @@
 const botoes = document.querySelectorAll('.tab-btn');
+const textcontent = document.querySelector('.manifesto');
 botoes.forEach((btn)=>{
     btn.addEventListener('click',(e)=>{
         let id = e.currentTarget.dataset.id;
@@ -7,10 +8,21 @@ botoes.forEach((btn)=>{
             btn.classList.remove('actual-btn');
         })
         artigos.forEach((artigo)=>{
-            artigo.classList.add('hide');
+            artigo.classList.remove('showtext');
         });
         const artigoalvo= document.getElementById(id);
-        artigoalvo.classList.remove('hide');
-        e.currentTarget.classList.add('actual-btn');
+        artigoalvo.classList.add('showtext');
+
+        botoes.forEach((b)=>{
+            if(b.dataset.id == id){
+                b.classList.add('actual-btn');
+            }
+        })
+        texto(textcontent);
+        //e.currentTarget.classList.add('actual-btn');
     })
 });
+
+function texto(element) {
+    element.scrollIntoView();
+}
