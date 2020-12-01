@@ -2,14 +2,23 @@
 /*FONTES ============================*/
 /*BACKGROUNDS =======================*/
 /*SHADOWS ========================*/
+/*ABOUT SECTION MARGIN*/
 /*Tipography ================ */
 /*Fontes*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 body {
   font-size: 16px;
-  line-height: 1.4;
-  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-family: Poppins, sans-serif;
+}
+
+.list {
+  padding-left: 20px;
+}
+
+.list-none {
+  list-style: none;
 }
 
 .big-title {
@@ -23,7 +32,7 @@ body {
 }
 
 .small-title1 {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 1.2rem;
@@ -44,7 +53,7 @@ body {
 }
 
 .small-title {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 1.2rem;
@@ -241,11 +250,72 @@ h4 {
 
 .about .container {
   position: relative;
+  outline: none;
 }
 
 .about .text {
   padding: 90px 0;
   margin-bottom: 30px;
+}
+
+.about .text .quem-somos {
+  margin-bottom: 45px;
+}
+
+.about .text .o-que-trazemos {
+  margin-bottom: 45px;
+}
+
+.about .text .sobre-candidato {
+  margin-bottom: 45px;
+}
+
+.about .text .sobre-candidato .name {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #e7c900;
+  background: #1f232b;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 4px 15px;
+  font-weight: 600;
+}
+
+.about .text .sobre-candidato .candidato-texto {
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .text .sobre-candidato .fotografia .foto {
+  background: #f2f2f2;
+}
+
+.about .text .sobre-candidato .fotografia img {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.about .text .sobre-candidato .fotografia::before {
+  display: none;
+  content: "";
+  width: 94%;
+  height: 100%;
+  top: 6%;
+  left: 10%;
+  position: absolute;
+  border-radius: 8px;
+  border: 3px solid #e7c900;
+}
+
+.about .text .linhas-estrategicas {
+  margin-top: 70px;
 }
 
 .about .cards {
@@ -433,7 +503,7 @@ h4 {
 
 .textContent .title-wrapper {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .textContent ol {
@@ -442,5 +512,58 @@ h4 {
 
 .textContent li {
   padding: 2px 0;
+}
+
+.textContent .bloco-texto {
+  margin-bottom: 70px;
+}
+
+.hide {
+  display: none;
+}
+
+.actual-btn {
+  border-left: 2px solid #e7c900 !important;
+  color: blue;
+}
+
+.manifesto {
+  background: #f2f2f2;
+  padding: 40px 0;
+}
+
+.manifesto .tab-text {
+  padding-left: 80px;
+}
+
+.manifesto .row {
+  padding: 50px 0;
+}
+
+.botoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.botoes button {
+  -webkit-transition: border color 500ms ease-in;
+  transition: border color 500ms ease-in;
+  padding: 8px 16px;
+  border: 0px solid #e7c900;
+  background: none;
+}
+
+.botoes button:hover {
+  color: blue;
+  border-left: 3px solid #e7c900;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=main.css.map */

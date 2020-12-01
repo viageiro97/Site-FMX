@@ -4,7 +4,6 @@ const overlayMenu = document.querySelector('.overlay');
 const header = document.getElementById('header');
 
 window.addEventListener('scroll',function(){
-    console.log(pageYOffset);
     if(pageYOffset>header.clientHeight){
         header.classList.add('navScrolled');
     }else{

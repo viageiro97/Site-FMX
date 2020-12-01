@@ -7,3 +7,8 @@
 @import 'responsive';
 @import './Paginas/pageHero';
 @import './Paginas/textContent';
+@import 'manifesto';
+
+html{
+    scroll-behavior: smooth;
+}

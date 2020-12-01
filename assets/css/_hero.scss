@@ -30,9 +30,11 @@
         a{
             color: $white;
         }
-
+        
         .nav-link{
+            //outline: solid;
             font-size: .9rem;
+            //text-transform: lowercase;
         }
         .actual{
             color: wheat;

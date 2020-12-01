@@ -1,0 +1,39 @@
+body{
+}
+
+.tab-link{
+
+}
+.hide{
+    display: none;
+}
+
+.actual-btn{
+    border-left: 2px solid $primary-color!important;
+    color: blue;
+}
+.manifesto{
+    background: $background-dark;
+    padding: 40px 0;
+    .tab-text{
+        padding-left: 80px;
+    }
+    .row{
+        padding: 50px 0;
+    }
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    button{
+        transition: border color 500ms ease-in;
+        padding: 8px 16px;
+        border: 0px solid $primary-color;
+        background: none;
+        &:hover{
+            color: blue;
+            border-left: 3px solid $primary-color;
+        }
+    }
+}
