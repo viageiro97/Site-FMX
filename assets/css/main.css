@@ -444,6 +444,25 @@ h4 {
 }
 
 @media (max-width: 768px) {
+  .manifesto .botoes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .manifesto .content-title {
+    text-align: center;
+  }
+  .manifesto .tab-text {
+    padding-left: 0 !important;
+    padding-right: 0;
+    padding-top: 25px;
+  }
   .big-title {
     font-size: 2.2rem;
   }
@@ -556,7 +575,6 @@ h4 {
 .textContent .bloco-texto {
   margin-bottom: 70px;
   outline: solid;
-  padding-left: 0;
 }
 
 .hide {
@@ -569,13 +587,12 @@ h4 {
 }
 
 .manifesto {
-  outline: solid;
   background: #f2f2f2;
   padding: 40px 0;
 }
 
 .manifesto .tab-text {
-  padding-left: 80px;
+  padding-left: 30px;
 }
 
 .manifesto .row {
@@ -603,6 +620,16 @@ h4 {
 .botoes button:hover {
   color: blue;
   border-left: 3px solid #e7c900;
+}
+
+.botoes2 {
+  padding-top: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 html {

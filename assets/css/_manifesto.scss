@@ -1,6 +1,9 @@
 body{
 }
 
+.bloco-texto{
+}
+
 .tab-link{
 
 }
@@ -13,11 +16,10 @@ body{
     color: blue;
 }
 .manifesto{
-    outline: solid;
     background: $background-dark;
     padding: 40px 0;
     .tab-text{
-        padding-left: 80px;
+        padding-left: 30px;
     }
     .row{
         padding: 50px 0;
@@ -37,4 +39,10 @@ body{
             border-left: 3px solid $primary-color;
         }
     }
+}
+
+.botoes2{
+    padding-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

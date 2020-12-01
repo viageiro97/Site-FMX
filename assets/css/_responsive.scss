@@ -41,6 +41,25 @@
 }
 //TO SCREEN LESS THAN 768px
 @media (max-width: 768px) {
+    //Manifesto
+    .manifesto{
+        .botoes{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .tab-btn{
+            
+        }
+        .content-title{
+            text-align: center;
+        }
+        .tab-text{
+            padding-left: 0!important;
+            padding-right: 0;
+            padding-top: 25px;
+        }
+    }
     //Hero
     .big-title{
         font-size: 2.2rem;
