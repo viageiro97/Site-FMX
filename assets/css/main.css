@@ -58,7 +58,7 @@ body {
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 1.2rem;
-  color: #e7c900;
+  color: #2727ad;
   position: relative;
 }
 
@@ -576,7 +576,7 @@ h4 {
 
 .actual-btn {
   border-left: 2px solid #e7c900 !important;
-  color: blue;
+  color: #2727ad !important;
 }
 
 .manifesto {
@@ -624,7 +624,7 @@ h4 {
 }
 
 .botoes button:hover {
-  color: blue;
+  color: #2727ad;
   border-left: 3px solid #e7c900;
 }
 

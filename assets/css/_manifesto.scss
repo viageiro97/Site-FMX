@@ -8,7 +8,7 @@ body{
 
 .actual-btn{
     border-left: 2px solid $primary-color!important;
-    color: blue;
+    color: $secondary-color!important;
 }
 .manifesto{
     .bloco-texto{
@@ -42,7 +42,7 @@ body{
         border: 0px solid $primary-color;
         background: none;
         &:hover{
-            color: blue;
+            color:$secondary-color;
             border-left: 3px solid $primary-color;
         }
     }
