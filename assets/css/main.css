@@ -426,13 +426,20 @@ h4 {
 @media (min-width: 1200px) { ... }*/
 @media (max-width: 450px) {
   .small-title {
-    text-align: center;
-    outline: solid;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
   .small-title::before {
     display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .small-title, .titlesection {
+    text-align: center;
+  }
+  .about ul, .about ol {
+    padding-left: 25px;
   }
 }
 

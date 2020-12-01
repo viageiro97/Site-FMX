@@ -16,8 +16,6 @@
 //TO SCREEN LESS THAN 450px
 @media (max-width: 450px) {
     .small-title{
-        text-align: center;
-        outline: solid;
         padding-left: 0 !important;
         padding-right: 0 !important;
         &::before{
@@ -26,6 +24,19 @@
     }
     //about
     .about{
+    }
+}
+
+//TO SCREEN LESS THAN 576
+@media (max-width: 576px) { 
+    .small-title,.titlesection{
+        text-align: center;
+    }
+    //about
+    .about{
+        ul,ol{
+            padding-left: 25px;
+        }
     }
 }
 //TO SCREEN LESS THAN 768px
