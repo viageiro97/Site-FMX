@@ -3,6 +3,7 @@
 /*BACKGROUNDS =======================*/
 /*SHADOWS ========================*/
 /*ABOUT SECTION MARGIN*/
+/*PADDING*/
 /*Tipography ================ */
 /*Fontes*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
@@ -11,6 +12,10 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: Poppins, sans-serif;
+}
+
+html {
+  overflow-x: scroll !important;
 }
 
 .list {
@@ -58,12 +63,12 @@ body {
   letter-spacing: 2px;
   font-size: 1.2rem;
   color: #e7c900;
-  padding-left: 53px;
   position: relative;
 }
 
 .small-title::before {
   content: "";
+  display: none;
   width: 45px;
   height: 10%;
   border-radius: 5px;
@@ -419,6 +424,18 @@ h4 {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }*/
+@media (max-width: 450px) {
+  .small-title {
+    text-align: center;
+    outline: solid;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .small-title::before {
+    display: none !important;
+  }
+}
+
 @media (max-width: 768px) {
   .big-title {
     font-size: 2.2rem;
@@ -431,6 +448,21 @@ h4 {
   }
   .small-title1::before {
     display: none;
+  }
+  .about .sobre-candidato {
+    text-align: center;
+  }
+  .about .sobre-candidato ul {
+    list-style: none;
+  }
+  .about .sobre-candidato .candidato-texto {
+    padding-left: 0 !important;
+    padding-right: 0;
+    padding-top: 45px;
+  }
+  .about .sobre-candidato .candidato-texto h3 {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -516,6 +548,8 @@ h4 {
 
 .textContent .bloco-texto {
   margin-bottom: 70px;
+  outline: solid;
+  padding-left: 0;
 }
 
 .hide {
@@ -528,6 +562,7 @@ h4 {
 }
 
 .manifesto {
+  outline: solid;
   background: #f2f2f2;
   padding: 40px 0;
 }

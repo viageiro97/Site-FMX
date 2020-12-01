@@ -13,6 +13,21 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }*/
 
+//TO SCREEN LESS THAN 450px
+@media (max-width: 450px) {
+    .small-title{
+        text-align: center;
+        outline: solid;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        &::before{
+            display: none!important;
+        }
+    }
+    //about
+    .about{
+    }
+}
 //TO SCREEN LESS THAN 768px
 @media (max-width: 768px) {
     //Hero
@@ -26,6 +41,26 @@
         padding-left: 0;
         &::before{
             display: none;
+        }
+    }
+
+    //About
+    .about{
+
+        .sobre-candidato{
+            ul{
+                list-style: none;
+            }
+            text-align: center;
+            .candidato-texto{
+                h3{
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                padding-left:$small-padding!important;
+                padding-right:$small-padding;
+                padding-top: 45px;
+            }
         }
     }
 
