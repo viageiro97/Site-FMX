@@ -243,6 +243,50 @@ h4 {
   margin-bottom: 25px;
 }
 
+.hero .redessociais {
+  margin-top: 35px;
+}
+
+.hero .redessociais i {
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #2846864d;
+  margin-right: 15px;
+}
+
+.hero .redessociais a {
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  background: #1f232b;
+  font-size: .9rem;
+  color: white;
+  max-width: 255px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.hero .redessociais a:hover {
+  text-decoration: none;
+  background: #28468688;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
 /*STYLES FOR THE ABOUT SECTION*/
 .about {
   background: #f2f2f2;

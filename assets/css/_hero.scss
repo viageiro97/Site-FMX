@@ -104,6 +104,36 @@
 
     }
 
+    .redessociais{
+        margin-top: 35px;
+        i{
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            background: #2846864d;
+            margin-right: 15px;
+        }
+
+        a{
+            transition: all 600ms;
+            background:$title-color;
+            font-size: .9rem;
+            color: white;
+            max-width: 255px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            &:hover{
+                text-decoration: none;
+                background: #28468688;
+                transform: scale(.98);
+            }
+        }
+    }
+
 
 }
 
